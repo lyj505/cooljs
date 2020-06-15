@@ -1,24 +1,35 @@
 {
-  "name": "cooljs",
-  "version": "0.0.0-development",
-  "description": "cooljs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo ok"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/iamkun/cooljs.git"
-  },
-  "keywords": [
-    "canvas",
-    "animation",
-    "engine"
-  ],
-  "author": "iamkun",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/iamkun/cooljs/issues"
-  },
-  "homepage": "https://github.com/iamkun/cooljs#readme"
+    "name": "cooljs",
+    "version": "0.0.0-development",
+    "description": "cooljs",
+    "main": "index.js",
+    "scripts": {
+        "dev": "webpack-dev-server --config ./config/webpack.config.js",
+        "start": "webpack  --config ./config/webpack.config.js",
+        "watch": "webpack  -w --config ./config/webpack.config.js",
+        "test": "echo ok"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/iamkun/cooljs.git"
+    },
+    "keywords": [
+        "canvas",
+        "animation",
+        "engine"
+    ],
+    "author": "iamkun",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/iamkun/cooljs/issues"
+    },
+    "homepage": "https://github.com/iamkun/cooljs#readme",
+    "dependencies": {
+        "html-webpack-plugin": "^4.3.0",
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-middleware": "^3.7.2",
+        "webpack-dev-server": "^3.11.0",
+        "webpack-hot-middleware": "^2.25.0"
+    }
 }
